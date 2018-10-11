@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="./script.js"></script>
     <title>Bookmarker</title>
 </head>
 <body>
@@ -17,5 +18,26 @@
             <button type="submit">Submit</button>
         </form>
     </div>
+    <div id=bookmarksResults>
+
+    </div>
 </body>
 </html>
+<style>
+    #bookmarksResults
+    {
+        padding: 0px;
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-gap: 20px;
+    }
+
+    .bookmark
+    {
+        padding: 10px;
+        background-color: lightgray;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    }
+</style>

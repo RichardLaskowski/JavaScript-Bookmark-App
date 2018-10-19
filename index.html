@@ -1,43 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="./script.js"></script>
-    <title>Bookmarker</title>
-</head>
-<body>
-    <div>
-        <h1>Bookmark your favorite site</h1>
-        <form id="bookmarkForm"> 
-            <label>Site Name</label>
-            <input type="text" class="form-contol" id="siteName" placeholder="Website Name">
-            <label>Site URL</label>
-            <input type="text" class="form-contol" id="siteURL" placeholder="Website URL">
-            <button type="submit">Submit</button>
-        </form>
-    </div>
-    <div id=bookmarksResults>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible">
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+        <script src="script.js"></script>
+        <title>Bookmarker</title>
+    </head>
+    <body>
+        <div>
+            <h1>Bookmarks</h1>
+            <form id="bookmarkForm"> 
+                <div id="siteNameWrapper">
+                    <label>Site Name</label>
+                    <input type="text" class="form-contol" id="siteName" placeholder="Website Name">
+                </div>
+                <div id="siteURLWrapper">
+                    <label>Site URL</label>
+                    <input type="text" class="form-contol" id="siteURL" placeholder="Website URL"> 
+                </div>
+                <div id="submitWrapper">
+                    <button type="submit">Submit</button>
+                </div>      
+            </form>
+        </div>
+        <div id=bookmarksResults>
 
-    </div>
-</body>
+        </div>
+    </body>
 </html>
-<style>
-    #bookmarksResults
-    {
-        padding: 0px;
-        margin-top: 20px;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        grid-gap: 20px;
-    }
-
-    .bookmark
-    {
-        padding: 10px;
-        background-color: lightgray;
-        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    }
-</style>
